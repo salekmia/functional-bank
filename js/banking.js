@@ -1,22 +1,22 @@
-// function getInputValue(inputId) {
-//     const input = document.getElementById(inputId)
-//     const inputText = input.value
-//     const inputAmount = parseFloat(inputText)
-//     // input clear
-//     input.value = ''
-//     return inputAmount
-// }
-// function getTotalAmount(totalId, amount, isAdd) {
-//     const total = document.getElementById(totalId)
-//     const totalText = total.innerText
-//     const totalAmount = parseFloat(totalText)
-//     // update
-//     if(isAdd == true) {
-//         total.innerText = totalAmount + amount
-//     } else {
-//         total.innerText = totalAmount - amount
-//     }
-// }
+function getInputValue(inputId) {
+    const input = document.getElementById(inputId)
+    const inputText = input.value
+    const inputAmount = parseFloat(inputText)
+    // input clear
+    input.value = ''
+    return inputAmount
+}
+function getTotalAmount(totalId, amount, isAdd) {
+    const total = document.getElementById(totalId)
+    const totalText = total.innerText
+    const totalAmount = parseFloat(totalText)
+    // update
+    if(isAdd == true) {
+        total.innerText = totalAmount + amount
+    } else {
+        total.innerText = totalAmount - amount
+    }
+}
 
 // // event handler for deposite button
 // document.getElementById('deposit-btn').addEventListener('click', function(){
