@@ -18,20 +18,21 @@ function getTotalAmount(totalId, amount, isAdd) {
     }
 }
 
-// // event handler for deposite button
-// document.getElementById('deposit-btn').addEventListener('click', function(){
-//     const inputAmount = getInputValue('deposit-input')
-//     if(inputAmount > 0) {
-//         depositUpdate = getTotalAmount('deposit-total', inputAmount, true)
-//         balanceUpdate = getTotalAmount('balance-total', inputAmount, true)
-//     } 
-// })
-// // event handler for withdrow button
-// document.getElementById('withdrow-btn').addEventListener('click', function(){
-//     const withdrowInputAmount = getInputValue('withdrow-input')
-//     if(withdrowInputAmount > 0) {
-//         withdrowUpdate = getTotalAmount('withdrow-total', withdrowInputAmount, true)
-//         withdrowUpdate = getTotalAmount('balance-total', withdrowInputAmount, false)  
-//     }
+// event handler for deposite button
+document.getElementById('deposit-btn').addEventListener('click', function(){
+    const inputAmount = getInputValue('deposit-input')
+    if(inputAmount > 0) {
+        depositUpdate = getTotalAmount('deposit-total', inputAmount, true)
+        balanceUpdate = getTotalAmount('balance-total', inputAmount, true)
+    } 
+})
+
+// event handler for withdrow button
+document.getElementById('withdrow-btn').addEventListener('click', function(){
+    const withdrowInputAmount = getInputValue('withdrow-input')
+    if(withdrowInputAmount > 0) {
+        withdrowUpdate = getTotalAmount('withdrow-total', withdrowInputAmount, true)
+        withdrowUpdate = getTotalAmount('balance-total', withdrowInputAmount, false)  
+    }
     
-// })
+})
